@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+    <script>
+        class Car {
+            constructor(name){
+           this.brand = name;
+            }
+            present(){
+                return "I hava a " + this.brand;
+            }
+        }
+    const myCar1 = new Car("BMW");
+    document.write(myCar1.present());    
+
+    const myCar2 = new Car("FORD");
+    document.write(myCar2.present());   
+
+    const myCar3 = new Car("AMW");
+    document.write(myCar3.present());    
+    </script>
+</body>
+</html>
