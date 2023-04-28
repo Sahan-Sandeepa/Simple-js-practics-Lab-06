@@ -17,14 +17,25 @@
                 return "I hava a " + this.brand;
             }
         }
-    const myCar1 = new Car("BMW");
-    document.write(myCar1.present());    
 
-    const myCar2 = new Car("FORD");
-    document.write(myCar2.present());   
+        class Model extends Car{
+            constructor(name, mod){
+                super(name);
+                this.model = mod;
+            }
 
-    const myCar3 = new Car("AMW");
-    document.write(myCar3.present());    
+            show(){
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+    const myCar1 = new Model("BMW", "AMW");
+    document.write(myCar1.show());    
+
+    // const myCar2 = new Car("FORD");
+    // document.write(myCar2.present());   
+
+    // const myCar3 = new Car("AMW");
+    // document.write(myCar3.present());    
     </script>
 </body>
 </html>
