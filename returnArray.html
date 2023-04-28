@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show"></h1>
+    <script>
+        const calculate = (a, b) => {
+            const add = a + b;
+            const subs = a - b;
+            const multi = a * b;
+            const devid = a / b;
+
+            return [add, subs, multi, devid];
+        }
+
+    const [add, subs, multi, devid] = calculate(4,7); 
+    
+    document.getElementById('show').innerHTML = add;
+    document.write("<p> Substract: " + subs + "</p>");
+    document.write("<p> Multiply: " + multi + "</p>");
+    document.write("<p> Devide: " + devid + "</p>");
+    </script>
+</body>
+</html>
