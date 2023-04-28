@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1 id="demo"></h1>
+    <script>
+        const array = [1,4,9,19];
+
+        const map = array.map(x => x*2);
+
+        document.getElementById("demo").innerHTML = map;
+    </script>
 </body>
 </html>
